@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "maxqual"
-version = "1.0.0"
+version = "1.0.1"
 description = "Download music at the highest quality YouTube will serve, with a properly tagged library"
 readme = "README.md"
 license = { text = "MIT" }
