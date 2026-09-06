@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maxqual"
+version = "1.0.0"
+description = "Download music at the highest quality YouTube will serve, with a properly tagged library"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "mareekkk" }]
+keywords = ["music", "youtube", "yt-dlp", "spotify", "deezer", "flac-free", "metadata"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Sound/Audio",
+]
+dependencies = [
+    "yt-dlp>=2025.1.1",
+    "mutagen>=1.47",
+    "Pillow>=10.0",
+    "requests>=2.31",
+]
+
+[project.urls]
+Homepage = "https://github.com/mareekkk/maxqual"
+
+[project.scripts]
+maxqual = "maxqual.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
