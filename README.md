@@ -1,5 +1,9 @@
 # maxqual
 
+[![PyPI](https://img.shields.io/pypi/v/maxqual.svg)](https://pypi.org/project/maxqual/)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://pypi.org/project/maxqual/)
+[![CI](https://github.com/mareekkk/maxqual/actions/workflows/publish.yml/badge.svg)](https://github.com/mareekkk/maxqual/actions/workflows/publish.yml)
+
 Build a music library at the **highest quality the source serves**, with complete
 tags, cover art and per-release organization.
 
@@ -48,7 +52,8 @@ Requires Python 3.10+, `ffmpeg` on PATH, and (recommended) a
 that `yt-dlp` can find.
 
 ```bash
-pipx install maxqual        # or: pip install maxqual
+pipx install maxqual        # recommended (isolated env)
+pip install maxqual         # or plain pip
 ```
 
 From source:
@@ -56,6 +61,14 @@ From source:
 ```bash
 git clone https://github.com/mareekkk/maxqual
 pipx install ./maxqual
+```
+
+## Quick start
+
+```bash
+maxqual download "Artist Name" -o ~/Music            # full discography
+maxqual download "https://open.spotify.com/playlist/..." -o ~/Music
+maxqual covers ~/Music                                # upgrade cover art
 ```
 
 ## Usage
